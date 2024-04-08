@@ -3,6 +3,7 @@ class Stack
 {
 private: 
 	int topIndex;
+	int maxSize;
 	int* data;
 public:
 	int pop();
