@@ -18,6 +18,8 @@ void Stack::push(int element)
 
 int Stack::top()
 {
+	if (isEmpty())
+		throw 2;// underflow exception 
 	return data[topIndex-1];
 }
 
@@ -48,4 +50,14 @@ void Stack::initStack()
 {
 	topIndex = 0;
 
+}
+
+Stack::~Stack()
+{
+	delete[] data;
+}
+
+int Stack::getCount()
+{
+	return topIndex;
 }

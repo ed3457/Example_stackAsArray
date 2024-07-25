@@ -14,6 +14,8 @@ public:
 	bool isEmpty();
 	bool isFull();
 	void initStack();
+	~Stack();
+	int getCount();
 
 
 };
